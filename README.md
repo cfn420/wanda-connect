@@ -20,6 +20,7 @@ def forward(self, x):
     return down_proj
 ```
 We simply changed the original Wanda pruning criteria for the up-projection from
+
 <p align="center">
   <img src="images/imp_wanda.svg" alt="CoNNect importance score" width="150">
 </p>
@@ -27,6 +28,7 @@ to
 <p align="center">
   <img src="images/imp_score_connect.svg" alt="CoNNect importance score" width="345">
 </p>
+
 Here, `X_{jk}^{n}` is the input activation for the k-th token in the n-th sample of the calibration set, and `X_{ik}^{n}` is the *output activation of the gate-projection* for the k-th token in the n-th sample of the calibration set. This score encourages retention of weights where input and output channels **co-activate**, improving the functional connectivity of the pruned network.
 
 We show the results (for 3 runs) in the following tables for various calibration set sizes and see that even with a modest integration of connectivity, we are able to improve upon Wanda.
