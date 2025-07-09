@@ -12,7 +12,7 @@ This work builds on the outstanding foundation laid by the authors of **Wanda**,
 
 --- 
 
-## 🔧 Modifications upon the Wanda repo
+## Modifications upon the Wanda repo
 Our integration exclusively modifies the pruning critera of the up-projection in the Llama MLP:
 ```python
 def forward(self, x):
@@ -49,17 +49,17 @@ We show the results (for 3 runs) in the following tables for various calibration
 |4:8|Wanda|8.41 (0.13)|8.29 (0.12)|8.22 (0.11)|8.17 (0.06)|8.14 (0.04)|
 |4:8|CoNNect|**8.18 (0.12)**|**8.05 (0.10)**|**8.04 (0.09)**|**8.06 (0.05)**|**8.01 (0.03)**|
 
-## ⚙️ Setup
+## Setup
 Installation instructions are equivalent to Wanda instructions and can be found in [INSTALL.md](INSTALL.md).
 
-## 🚀 Usage
+## Usage
 Run [`scripts/llama_7b.sh`](scripts/llama_7b.sh) to prune the LLaMA-7B model using Wanda-CoNNect.
 
-## 🙏 Acknowledgement
+## Acknowledgement
 This repository is built upon the [Wanda](https://github.com/locuslab/wanda) repository.
 
-## 🛡️ License
+## License
 This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
 
-## 🤝 Contact
+## Contact
 For questions or contributions, please email c.p.c.franssen [at] vu.nl or open an issue.
