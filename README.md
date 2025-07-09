@@ -12,7 +12,7 @@ This work builds on the outstanding foundation laid by the authors of **Wanda**,
 
 --- 
 
-## 🔧 Modifications by Christian Franssen
+## 🔧 Modifications upon the Wanda repo
 Our integration exclusively modifies the pruning critera of the up-projection in the Llama MLP:
 ```python
 def forward(self, x):
